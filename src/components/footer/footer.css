@@ -1,0 +1,124 @@
+footer{
+  background-color: var(--dark-blue);
+  padding: 15px 0;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 50px; */
+}
+
+.footer__header{
+  border: thin solid var(--gray);
+  flex:1;
+  padding: 1.7rem;
+  margin: 3rem 0 0 0 ;
+}
+.footer__header > h1{
+  color:var(--white);
+}
+
+.footer__header p {
+margin: 1.4rem 0;
+color: var(--gray);
+}
+.footer__input{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 999px;
+  padding: .8rem 1.3rem;
+  margin-bottom: 1.4rem;
+}
+.footer__input input {
+  border: none;
+  background: none;
+  flex: 1;
+}
+
+.footer__button{
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding: .41rem ;
+}
+
+.footer > h1,h2,h3 {
+  color: var(--light);
+  font-weight: 500;
+}
+.footer__details{
+  display: flex;
+  flex: 4;
+  padding: 0 .8rem;
+}
+.footer__detailCompany {
+flex: 2;
+margin-left: 30px;
+}
+
+.footer__detailContact h4 {
+  padding-top: 1.2rem ;
+   color: var(--light);
+}
+.footer__detailContact p {
+  padding-top: .4rem;
+  color: var(--gray);
+}
+
+.footer__detailCompany li {
+  color: var(--gray);
+  margin: 1rem 0;
+}
+
+.footer__detailContact {
+flex: 2;
+}
+
+hr{
+  
+  height: 1px;
+  background: rgba(211, 211, 211, 0.767);
+  margin-top: 40px;
+  border: 0;
+}
+
+.footer__bottom{
+   padding: 0 .8rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* text-align: center; */
+   /* margin: 1rem 0; */
+   padding: 10px 0;
+
+}
+.footer__bottom h3 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.footer__bottomOptions{
+  display: flex;
+  justify-content: center;
+}
+.footer__bottomOptions p {
+   color: var(--gray);
+   margin-right: .51rem;
+   padding: 30px 0 ;
+}
+
+/* media queries */
+
+@media (max-width:567px) {
+  .footer,.footer__details,.footer__bottom{
+    flex-direction: column;
+  }
+  .footer__detailCompany {
+    margin-left: 0px;
+  }
+}

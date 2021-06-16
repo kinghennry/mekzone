@@ -1,0 +1,103 @@
+    /* color: #666666; */
+
+    .blogs{   
+           padding: 5.5rem 0;
+    }
+    
+    .blogs__title > h1 {
+        color: var(--primary);
+        font-size: 25px;
+    }
+    .blogs__title > h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        position: relative;
+        color: var(--gray-dark);
+    }
+    .blogs__title  h2::before {
+        position: absolute;
+        background: #086AD8 none repeat scroll 0 0;
+        bottom: -20px;
+        content: "";
+        height: 2px;
+        left: 50%;
+        margin-left: -25px;
+        width: 40px;
+    }
+
+    .blogs__title h2::after {
+        background: #086AD8 none repeat scroll 0 0;
+        bottom: -20px;
+        content: "";
+        height: 2px;
+        left: 50%;
+        margin-left: 20px;
+        position: absolute;
+        width: 5px;
+    }
+    .blog{
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+        transition: transform .2s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .blog:hover {
+        transform: scale(1.04);
+    }
+    .blog__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .blog__details{
+        padding: 1rem ;
+    }
+
+    .blog__name{
+         color: var(--gray-dark);
+         position: relative;
+         margin-left: 20px;
+        font-weight: 500;
+    }
+    .blog__name::after {
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        content: "";
+        height: 1px;
+        width: 15px;
+        background: #666666;
+    }
+    .blog__detail{
+        font-weight: 500;
+        color:#666666;
+        font-size:15px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+    }
+    .blog__detailIcon{
+        color: blue;
+        font-size: 15px;
+    }
+
+    .blog__text{
+        color: var(--dark-blue);
+        font-weight: 600;
+    }
+
+@media (max-width:768px){
+ .blog__grid {
+     grid-template-columns: repeat(2, 1fr);
+ }
+
+}
+@media (max-width:567px){
+ .blog__grid {
+     grid-template-columns: repeat(1, 1fr);
+ }
+ .blog__details {
+     padding: 1rem;
+ }
+}

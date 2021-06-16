@@ -1,0 +1,120 @@
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+}
+
+.header--black {
+    background-color: var(--primary);
+    /* backdrop-filter: blur(10px); */
+    transition: background-color .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);    
+}
+
+.nav__logo {
+    color: #0e2b3d;
+    font-size: 27px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 1rem;
+    transition: all .4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    height: 2px;
+    background-color: rgb(130, 220, 248);
+    transform-origin: 1.1px 2px;
+}
+
+.nav-toggle span:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.span1--active {
+    color: white;
+    transform: rotateZ(45deg);
+}
+.links a {
+    color: #666666;
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.links a:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-5);
+    padding-left: 1.5rem;
+}
+
+.social-icons {
+    display: none;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.show-container {
+    height: 10rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-center {
+        max-width: 122rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links-container {
+        height: auto !important;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .social-icons a {
+        margin: 0 0.5rem;
+    }
+
+    .social-icons a:hover {
+    }
+}
+
+
