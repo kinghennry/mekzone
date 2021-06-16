@@ -1,0 +1,145 @@
+.tabs__btn{
+    margin-bottom: 3.5rem;
+}
+ .tabs-btn  {
+    padding: 1rem 0;
+    cursor: pointer;
+    border-left: transparent;
+    border-right: transparent;
+    border: transparent;
+    background: transparent;
+    font-size: 14px;
+    border-radius: 0px;
+    color: var(--VeryDarkBlue);
+}
+.tabs-btn:first-child {
+border-top: 1px solid var(--GrayishBlue);
+}
+
+.tabs-btn:nth-child(2){
+    border-top: 1px solid var(--GrayishBlue);
+}
+.tabs-btn:last-child {
+    border-top: 1px solid var(--GrayishBlue);
+}
+
+.tabs__img{
+    position: relative;
+}
+
+.tabs-btn-active{
+    border-bottom: 3px solid var(--SoftRed);
+    border-top: transparent;
+    
+}
+.tabs__img::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    background-color: var(--SoftBlue);
+    border: thin solid var(--SoftBlue);
+    top: 5rem;
+    right: 1rem;
+    border-radius: 0 0 11rem  0;
+    z-index: -1;
+}
+
+.tabs__text{
+    margin-top: 80px;
+    text-align: center;
+}
+.tabs__text h1 {
+    font-size: 1.5rem;
+}
+.tabs__text p {
+    padding: 15px 0 40px  ;
+}
+.tabs__text .tab__btn{
+    display: none;
+}
+@media (min-width:768px){
+.tabs__btn {
+    flex-direction: row;
+}
+.tabs__btn button {
+    padding: 0 3rem;
+}
+.tabs__btn{
+    margin-bottom: 20px;
+}
+.tabs__btn button:first-child {
+    border-bottom: unset;
+    border-top: unset;
+}
+.tabs-btn:nth-child(2) {
+    border-top: unset;
+}
+.tabs__btn button:not(:first-child) {
+    border-bottom: transparent;
+}
+
+.tabs__btn button:last-child {
+    border: unset;
+}
+
+.tabs__flex{
+    display: flex;
+    align-items: center;
+}
+.tabs__text {
+    text-align: left;
+    flex: 2;
+}
+.tabs__text p {
+    font-size: 14px;
+}
+.tabs__img {
+    flex: 3;
+}
+.tabs__text{
+    margin-top: 0;
+    margin-left: 1rem;
+}
+.tabs__img::before{
+    top: 7rem;
+    right: 13rem;
+}
+.tabs__text  .tab__btn{
+    display: inline;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--SoftBlue);
+    border: thin solid var(--SoftBlue);
+    padding: .7rem;
+}
+.tabs-btn-active {
+    border-bottom: 3px solid var(--SoftRed);
+}
+}
+
+@media (min-width:1440px) {
+    .tabs__text h1 {
+        font-size: 2rem;
+    }
+    .tabs__text p {
+        font-size: 20px;
+    }
+.tabs-btn-active {
+    border-bottom: 3px solid var(--SoftRed);
+}
+.tabs__img::before {
+    top: 7rem;
+    right: 20rem;
+}
+    .tabs__text {
+        margin-top: 0;
+        margin-left: unset;
+    }
+
+    .tabs__text .tab__btn {
+        font-size: 16px;
+        padding: 1rem;
+    }
+}
+

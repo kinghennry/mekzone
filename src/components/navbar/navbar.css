@@ -4,12 +4,13 @@ header {
     top: 0;
     z-index: 100;
     background: white;
-}
+    }
 
 .header--black {
     /* background-color: var(--primary); */
     /* backdrop-filter: blur(10px); */
     transition: background-color .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);    
+    /* color:var(--light); */
 }
 
 .nav__logo {
@@ -80,7 +81,9 @@ header {
         justify-content: space-between;
         padding: 1.3rem 0;
     }
-
+.links a {
+    border-top: none;
+}
     .nav-header {
         padding: 0;
     }
@@ -99,7 +102,7 @@ header {
 
     .links a {
         margin: 0 0.5rem;
-        color: black;
+        /* color: black; */
         font-weight: 500;
     }
 
