@@ -1,8 +1,6 @@
 import  { useState, useRef, useEffect } from 'react';
 import "./navbar.css"
 import { links, social } from '../data';
-import logo from '../logo.svg';
-import { FaBars } from 'react-icons/fa';
 import {Link} from "react-router-dom"
 export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -21,18 +19,19 @@ export default function Navbar() {
     }
   }, [showLinks]);
 
-      useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                handleShow(true);
-            } else handleShow(false);
-        });
-        return () => {
-            window.removeEventListener("scroll");
-        };
-    }, []);
+    //   useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         if (window.scrollY > 100) {
+    //             handleShow(true);
+    //         } else handleShow(false);
+    //     });
+    //     return () => {
+    //         window.removeEventListener("scroll");
+    //     };
+    // }, []);
     return (
-        <header  className={`header ${show && "header--black"}`}>
+        // <header  className={`header ${show && "header--black"}`}>
+        <header className="header">
             <div className='nav-center'>
             <div className='nav-header'>
             <Link to="/">
@@ -57,7 +56,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className='social-icons'>
-          <h1>hello</h1>
+          {/* <h1>hello</h1> */}
         </div>
       </div>
         </header>

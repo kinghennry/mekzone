@@ -1,0 +1,14 @@
+.contact__feed{
+    display: flex;
+}
+.contact__text{
+    flex: 3;
+}
+.contact__details{
+    flex: 4;
+}
+@media (max-width:567px){
+    .contact__feed {
+        flex-direction: column;
+    }
+}

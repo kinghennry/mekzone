@@ -7,7 +7,7 @@ header {
 }
 
 .header--black {
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
     /* backdrop-filter: blur(10px); */
     transition: background-color .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);    
 }
@@ -41,18 +41,19 @@ header {
     color: white;
     transform: rotateZ(45deg);
 }
+
 .links a {
     color: #666666;
-    font-size: 1rem;
     text-transform: capitalize;
     display: block;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
+    /* margin-bottom: .5rem ; */
+    border-top: 1px solid #c7c6c6;
 }
 
 .links a:hover {
     background: var(--clr-primary-8);
     color: var(--clr-primary-5);
-    padding-left: 1.5rem;
 }
 
 .social-icons {
@@ -73,10 +74,11 @@ header {
     .nav-center {
         max-width: 122rem;
         margin: 0 auto;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 1.3rem 0;
     }
 
     .nav-header {
@@ -96,13 +98,17 @@ header {
     }
 
     .links a {
-        padding: 0;
         margin: 0 0.5rem;
+        color: black;
+        font-weight: 500;
     }
 
     .links a:hover {
-        padding: 0;
-        background: transparent;
+        /* padding: 0; */
+        /* background: transparent; */
+        color: #086AD8;
+        transition: color .4s ubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
     }
 
     .social-icons {
@@ -113,8 +119,6 @@ header {
         margin: 0 0.5rem;
     }
 
-    .social-icons a:hover {
-    }
 }
 
 

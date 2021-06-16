@@ -14,12 +14,22 @@ export const links = [
   {
     id: 3,
     url: '/team',
-    text: 'MEET OUR TEAMS',
+    text: 'OUR TEAM',
   },
   {
     id: 4,
     url: '/contact',
     text: 'CONTACT',
+  },
+  {
+    id: 5,
+    url: '/services',
+    text: 'SERVICES',
+  },
+  {
+    id: 6,
+    url: '/work',
+    text: 'HOW WE WORK',
   },
 
 ];

@@ -1,9 +1,13 @@
-import React from 'react'
-
+import Footer from "../../components/footer/Footer"
+import Navbar from "../../components/navbar/Navbar"
+import TeamList from "../../components/teamList/TeamList"
+import "./team.css"
 export default function Team() {
     return (
-        <div>
-            <h1>team</h1>
-        </div>
+        <>
+            <Navbar />
+            <TeamList/>
+            <Footer/>
+        </>
     )
 }

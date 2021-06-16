@@ -1,8 +1,8 @@
 import React from 'react'
 import "./App.css"
 // import Chat from './components/Chat'
-import Home from './pages/Home'
-import About from './pages/About'
+import Home from './pages/home/Home'
+import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Error from './pages/error/Error'
 import Team from './pages/team/Team'
