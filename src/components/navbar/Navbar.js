@@ -54,7 +54,7 @@ export default function Navbar() {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <Link className={`link ${show && "link__show"}`} to={url}>{text}</Link>
+                  <Link className='link' to={url}>{text}</Link>
                 </li>
               );
             })}

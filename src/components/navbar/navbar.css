@@ -92,7 +92,7 @@ color: #ffffff;
         justify-content: space-between;
         padding: 1.3rem 0;
     }
-.links a {
+.links .link {
     border-top: none;
 }
     .nav-header {
