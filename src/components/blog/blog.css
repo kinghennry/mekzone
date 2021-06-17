@@ -75,7 +75,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin: 1rem 0;
+        margin: 1rem 0 0 ;
     }
     .blog__detailIcon{
         color: blue;
@@ -85,6 +85,7 @@
     .blog__text{
         color: var(--dark-blue);
         font-weight: 600;
+        padding: 1.2rem 0;
     }
 
 @media (max-width:768px){

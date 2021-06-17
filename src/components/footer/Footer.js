@@ -1,5 +1,6 @@
 import "./footer.css"
-import {FiSend} from "react-icons/fi"
+import { FiSend } from "react-icons/fi"
+import {Link} from "react-router-dom"
 export default function Footer() {
     return (
         <footer>
@@ -19,10 +20,21 @@ export default function Footer() {
                         <div className="footer__detailCompany">
                              <h2>Company</h2>
                     <ul>
-                       <li>About us</li>
-                       <li>Contact us</li>
-                       <li>Meet Our Teams</li>
-                       <li></li>
+                        <li>
+                            <Link to='/about'>
+                                 About us
+                            </Link>     
+                        </li>
+                        <li>
+                            <Link to='/contact'>
+                                Contact us
+                            </Link>
+                       </li>
+                        <li>
+                             <Link to='/contact'>
+                                Meet Our Teams
+                             </Link>       
+                        </li>
                     </ul>
                     
                         </div>
@@ -33,7 +45,7 @@ export default function Footer() {
                     <p>5919 Trussville Crossings Pkwy, Birmingham AL 35235</p>
 
                     <h4>EMAIL</h4>
-                    <p>info@validtheme.coms</p>
+                    <p>contact@mekzone.in</p>
                    </div>
                     
                 </div>

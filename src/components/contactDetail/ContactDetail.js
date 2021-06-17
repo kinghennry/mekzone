@@ -10,21 +10,22 @@ export default function ContactDetail() {
                         <input placeholder="Name" />
                     </div>
                     <div className="contact__input">
-                        <input placeholder="Email" type="email" />
+                        <input placeholder="Email*" type="email" />
                     </div>
                     <div className="contact__input">
                         <input type="number" placeholder="Number" />
                         
                     </div>
                     <div className="contact__input">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Please describe what you need."></textarea>
+                        <textarea name="" id="" cols="20" rows="10" placeholder="Please describe what you need."></textarea>
                     </div>
+                    <button type="button">Submit</button>
                 </div>
                 <div className="contact__details">
                     <button>Address</button>
                     <button>Google Maps</button>
                     <div className="contact__detailItem">
-
+                        
                     </div>
                 </div>
             </div>

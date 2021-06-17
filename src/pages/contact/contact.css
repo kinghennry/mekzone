@@ -1,12 +1,50 @@
+.contact{
+    padding: 40px 0;
+}
 .contact__feed{
     display: flex;
 }
 .contact__text{
-    flex: 3;
+    flex: 2;
 }
 .contact__details{
-    flex: 4;
+    flex: 3;
 }
+
+.contact__text h1 {
+    color: #0e2b3d;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.contact__text p {
+    color: #666666;
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+
+.contact__text button {
+ color:#ffff;
+ background: #086AD8;
+ border:none;
+ padding: 15px 40px ;
+ font-weight: 600;
+display: inline-block;
+ border-radius: 6px;
+}
+.contact__input {
+    box-shadow: inherit;
+    padding: 15px;
+    background: #fafafa;
+    display: flex;
+    margin: 15px 0;
+    }
+.contact__input input,textarea {
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+    }
 @media (max-width:567px){
     .contact__feed {
         flex-direction: column;

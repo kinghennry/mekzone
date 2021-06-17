@@ -65,7 +65,8 @@
     font-weight: 600;
     position: relative;
     padding: 15px 0;
-    
+    display:block;  
+    margin:1.4rem 0;
  }
 .service__info>a::after {
      position: absolute;

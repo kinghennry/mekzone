@@ -29,8 +29,7 @@ border-top: 1px solid var(--GrayishBlue);
 
 .tabs-btn-active{
     border-bottom: 3px solid var(--SoftRed);
-    border-top: transparent;
-    
+    border-top: transparent;    
 }
 .tabs__img::before {
     content: "";

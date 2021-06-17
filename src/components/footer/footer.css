@@ -72,16 +72,18 @@ margin-left: 30px;
 }
 
 .footer__detailCompany li {
-  color: var(--gray);
+  
   margin: 1rem 0;
+}
+.footer__detailCompany li a {
+  color: var(--gray);
 }
 
 .footer__detailContact {
 flex: 2;
 }
 
-hr{
-  
+hr{ 
   height: 1px;
   background: rgba(211, 211, 211, 0.767);
   margin-top: 40px;
@@ -120,5 +122,8 @@ hr{
   }
   .footer__detailCompany {
     margin-left: 0px;
+  }
+  .footer__detailCompany {
+    margin-top: 20px;
   }
 }
