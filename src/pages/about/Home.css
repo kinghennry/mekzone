@@ -1,0 +1,219 @@
+.mobile,
+.tab,
+.desktop {
+    display: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.hero_text {
+    font-weight: var(--weightBold);
+    font-family: var(--fontFamilyserif);
+    font-size: 2.4rem;
+    padding: 30px 0;
+}
+
+@media (max-width:767px) {
+    .mobile {
+        display: unset;
+    }
+
+}
+
+@media (min-width:768px) {
+    .tab {
+        display: unset;
+    }
+}
+
+@media (min-width:1024px) {
+    .desktop {
+        display: unset;
+    }
+
+    .tab {
+        display: none;
+    }
+}
+
+@media (min-width: 576px){
+     .home__hero {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--colorVerylightgray);
+    background-color: red;
+    width: 74.709%;
+    max-width: 51.4rem;
+    padding-top: 2.8rem;
+    padding-right: 2.8rem;
+}
+
+}
+@media (min-width: 720px) {
+    .home__hero {
+        padding-right: 5.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home__hero {
+    padding: 3rem 2rem 3rem 0;
+    width: 60%;
+}
+}
+
+
+.home-about__image {
+     height: 24.6rem;
+     background-image: url("../images/IMG_8718.JPG");
+     background-size: cover;
+     margin-bottom: 3.2rem;
+     background-position: center center;
+ }
+
+ .home-about__content {
+     border-top: 1px solid var(--colorBordergray);
+     border-bottom: 1px solid var(--colorBordergray);
+     padding: 3rem 0;
+     margin: 2rem 0;
+ }
+
+.home-about__content h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.home-about__content p {
+    line-height: 1.8;
+    letter-spacing: .1px;
+    padding-bottom: 40px;
+}
+
+.home-about__content .hero__link {
+    padding: 1rem 2rem;
+    color: #203A4C;
+    font-size: 13px;
+    letter-spacing: .41px;
+    font-weight: 500;
+    border: thin solid #203A4C;
+    margin-bottom: 2rem;
+}
+
+ @media (min-width: 768px) {
+     .home-about__image {
+         height:30rem;
+         background-image: url("../images/IMG_8718.JPG");
+         width: 40.784%;
+         margin-bottom: 0;
+     }
+ }
+
+ @media (min-width: 768px) {
+     .home-about__content {
+         width: 49.202%;
+         padding: 0;
+         display: flex;
+         flex-direction: column;
+         /* justify-content: space-evenly; */
+         justify-content: stretch;
+         align-items: flex-start;
+     }
+ }
+
+@media (min-width: 1200px) {
+    .home-about__content {
+        width: 34.65rem;
+        max-width: 35rem;
+        margin-left: 12.5rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .home__about {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+.newsletter{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+ } 
+
+.newsletter h2 {
+font-family: var(--fontFamilyserif);
+font-size: 3rem;
+font-weight: var(--weightSemiBold);
+line-height: 4.2rem; 
+letter-spacing: -0.36px;
+}
+
+.newsletter a {
+    margin-top: 2rem;
+     padding: 1rem 2.1rem; 
+    font-size: 13px;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    border: thin solid #203A4C;
+    color:var(--colorGrayishdarkblue);
+    font-weight: var(--weightSemiBold);
+    transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.newsletter a:hover, .newsletter a:active{
+background-color: #203A4C;
+color: white;
+}
+
+@media (min-width:768px){
+.newsletter {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ }
+  .newsletter h2 {
+      font-size: 2rem;
+      width: 30%;
+  }
+.call-to-action__line {
+    display: block;
+    height: 1px;
+    width: 40%;
+    background-color: var(--colorGrayishdarkblue);
+    opacity: .15;
+}
+.newsletter a {
+    margin-top: unset;
+}
+}
+
+@media (min-width:1024px){
+.call-to-action__line{
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: var(--colorGrayishdarkblue);
+    opacity: .15;
+}
+ .newsletter h2 {
+     font-size: 2,4rem;
+     width: 30%;
+ }
+}

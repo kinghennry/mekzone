@@ -1,0 +1,32 @@
+.picture{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.address__icon {
+    display: inline-block;
+    height: 60px !important;
+    width: 60px !important;
+    text-align: center !important;
+    line-height: 80px !important;
+    background: #ffffff !important;
+    padding: 10px 0;
+    border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+    color: #086AD8 !important;
+    margin-right: 20px !important;
+    box-shadow: 0 5px 30px 0 rgb(214 215 216 / 57%) !important;
+} 
+.pic__text h4{
+        font-weight: 700;
+        color: #0e2b3d;
+        margin-bottom: 0;
+}
+
+.pic__text p{
+        display: block;
+        font-weight: normal;
+        text-transform: none;
+        color: #666666;
+        margin-top: 8px;
+}

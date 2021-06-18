@@ -5,22 +5,23 @@
     display: flex;
 }
 .contact__text{
-    flex: 2;
+    flex: .5;
 }
 .contact__details{
-    flex: 3;
+    flex: .5;
 }
 
 .contact__text h1 {
     color: #0e2b3d;
     line-height: 1.2;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .contact__text p {
     color: #666666;
     font-weight: 400;
-    padding: 1.2rem 0;
+    padding: 13px 0;
 }
 
 .contact__text button {
@@ -29,7 +30,7 @@
  border:none;
  padding: 15px 40px ;
  font-weight: 600;
-display: inline-block;
+ display: inline-block;
  border-radius: 6px;
 }
 .contact__input {
@@ -38,6 +39,7 @@ display: inline-block;
     background: #fafafa;
     display: flex;
     margin: 15px 0;
+    width: 80%;
     }
 .contact__input input,textarea {
     border: none;
@@ -45,8 +47,55 @@ display: inline-block;
     font-size: 16px;
     background: transparent;
     }
+
+.contact__details {
+    margin-top: 20px;
+    position: relative;
+}
+
+.contact__details .contact__btn {
+    margin: 10px ;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #086AD8;
+    font-weight: 500;
+    border: none;
+}
+.contact__details::before {
+    content:"";
+    position: absolute;
+    border-bottom:1px solid rgb(204, 203, 203);
+    height: 2px;
+    width: 100%;
+    top: 55px;
+    left: 10px; 
+}
+
+.contact__details .contact__btn-active {
+    border-bottom: 3px solid #086AD8;
+}
 @media (max-width:567px){
-    .contact__feed {
+    .contact__feed,
+    .contact__details  {
+        display: flex;
         flex-direction: column;
     }
+    .contact__details::before {
+        display: none;  
+    }
+    .contact__input {
+        width: unset;
+    }
+    .contact__details .contact__btn {
+        margin: 10px 0;
+        padding: 10px 40px;
+        border: 1px solid #e6e0e0;
+    }
+    .contact__details .contact__btn-active {
+        border-bottom: 3px solid #086AD8;
+    }
 }
+
+
+

@@ -1,5 +1,12 @@
+import {useState} from 'react'
+import contacts from '../../data/contact';
 
 export default function ContactDetail() {
+const [contact, setContact] = useState(contacts)
+const [value, setValue] = useState(0)
+const {id,index,btn,title,desc,tab,img,imgTwo,
+    imgThree}=contacts[value]
+
     return (
         <section className='contact'>
             <div className="container contact__feed">
@@ -13,19 +20,22 @@ export default function ContactDetail() {
                         <input placeholder="Email*" type="email" />
                     </div>
                     <div className="contact__input">
-                        <input type="number" placeholder="Number" />
-                        
+                        <input type="number" placeholder="Number" />   
                     </div>
                     <div className="contact__input">
-                        <textarea name="" id="" cols="20" rows="10" placeholder="Please describe what you need."></textarea>
+                        <textarea name="" id="" cols="10" rows="7" placeholder="Please describe what you need."></textarea>
                     </div>
                     <button type="button">Submit</button>
                 </div>
                 <div className="contact__details">
-                    <button>Address</button>
-                    <button>Google Maps</button>
+                    {contacts.map((item, index) => {
+                        return (
+                            <>                    
+                                <button className={`contact__btn ${index === value && 'contact__btn-active'}`}  key={item.id} onClick={() => setValue(index)}>{item.btn}</button>
+                            </>)})
+                    }
                     <div className="contact__detailItem">
-                        
+                        {tab}
                     </div>
                 </div>
             </div>

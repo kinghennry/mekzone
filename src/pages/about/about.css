@@ -1,0 +1,35 @@
+.about__flex{
+    display: flex;
+    margin: 30px 0;
+}
+.about__details{
+    flex: 0.5;
+}
+.about__text{
+    flex: 0.5;
+}
+.about__img img{
+    border-radius: 15px;
+}
+.about__img {
+    margin-right: 25px;
+}
+.about__text h1 {
+    color: #0e2b3d;
+    font-weight: 600;
+    margin:25px 0 ;
+}
+
+.about__text p {
+    color: #666666;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 2;
+    
+}
+@media (max-width:567px){
+    .about__flex{
+        flex-direction: column;
+    }
+}

@@ -28,6 +28,12 @@ border-radius: 100%;
     font-weight: 600;
     margin-left: 10px;
 }
+.question .answer__text {
+    color: #0e2b3d;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 18px;
+}
 .question .icon {
     cursor: pointer;
     margin-left: auto;
@@ -44,7 +50,7 @@ border-radius: 100%;
 .answer p {
     line-height: 1.5;
     letter-spacing: .3px;
-    border-top: 1px solid #666666;
+    border-top: 1px solid lightgray;
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
 }

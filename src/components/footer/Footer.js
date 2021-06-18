@@ -40,14 +40,12 @@ export default function Footer() {
                         </div>
                     <div className="footer__detailContact">
                         <h2>Contact Info</h2>
+                        <h4>ADDRESS</h4>
+                        <a>5919 Trussville Crossings Pkwy, Birmingham AL 35235</a>
 
-                    <h4>ADDRESS</h4>
-                    <p>5919 Trussville Crossings Pkwy, Birmingham AL 35235</p>
-
-                    <h4>EMAIL</h4>
-                    <p>contact@mekzone.in</p>
-                   </div>
-                    
+                        <h4>EMAIL</h4>
+                        <a>contact@mekzone.in</a>
+                   </div>               
                 </div>
                  </div>
                 <hr />
@@ -55,9 +53,9 @@ export default function Footer() {
                 <div className="footer__bottom">
                     <h3>Copyright &#169; 2021.All Rights Reserved.</h3>
                     <div className="footer__bottomOptions">
-                        <p>Terms</p>
-                        <p>Privacy</p>
-                        <p>Support</p>
+                        <a>Terms</a>
+                        <a>Privacy</a>
+                        <a>Support</a>
                     </div>
                 </div>
             </div>

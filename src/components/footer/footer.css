@@ -6,7 +6,6 @@ footer{
 .footer{
   display: flex;
   align-items: center;
-  /* margin-bottom: 50px; */
 }
 
 .footer__header{
@@ -72,17 +71,20 @@ margin-left: 30px;
 }
 
 .footer__detailCompany li {
-  
   margin: 1rem 0;
 }
-.footer__detailCompany li a {
+.footer__detailCompany li a  {
   color: var(--gray);
 }
 
 .footer__detailContact {
 flex: 2;
 }
-
+.footer__detailContact a {
+ color: var(--gray);
+ padding-top: 10px;
+ display: block;
+}
 hr{ 
   height: 1px;
   background: rgba(211, 211, 211, 0.767);
@@ -95,10 +97,7 @@ hr{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* text-align: center; */
-   /* margin: 1rem 0; */
    padding: 10px 0;
-
 }
 .footer__bottom h3 {
   font-size: 15px;
@@ -108,7 +107,7 @@ hr{
   display: flex;
   justify-content: center;
 }
-.footer__bottomOptions p {
+.footer__bottomOptions a {
    color: var(--gray);
    margin-right: .51rem;
    padding: 30px 0 ;

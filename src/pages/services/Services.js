@@ -17,7 +17,7 @@ const {id,index,btn,title,img,desc,feature,featuretwo,featurethree}=tabs[value]
               <center className="blogs__title">
                   <h1>SERVICES</h1>
                   <h2>What we do</h2>
-                    </center>
+                </center>
                  <div className="service__btn fx jc fc ">
                 {tabs.map((item, index) => {
             return (
